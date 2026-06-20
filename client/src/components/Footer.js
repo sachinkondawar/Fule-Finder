@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Navigation, Compass, Github, Twitter, Facebook, Mail } from 'lucide-react';
+import { MapPin, Navigation, Compass, Github, Twitter, Facebook, Mail, Instagram } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Footer = () => {
@@ -29,14 +29,17 @@ const Footer = () => {
                 The most advanced spatial mapping engine for tracking fuel databanks and regional availability globally.
               </p>
               <div className="flex gap-4">
-                 <motion.a whileHover={{ y: -3, scale: 1.1 }} href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-indigo-300 hover:text-white hover:bg-indigo-500 hover:border-indigo-400 shadow-sm transition-all">
+                 <motion.a whileHover={{ y: -3, scale: 1.1 }} href="https://github.com/sachinkondawar/Fule-Finder" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-indigo-300 hover:text-white hover:bg-indigo-500 hover:border-indigo-400 shadow-sm transition-all" aria-label="GitHub">
                     <Github size={18} />
                  </motion.a>
-                 <motion.a whileHover={{ y: -3, scale: 1.1 }} href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-indigo-300 hover:text-white hover:bg-blue-500 hover:border-blue-400 shadow-sm transition-all">
+                 <motion.a whileHover={{ y: -3, scale: 1.1 }} href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-indigo-300 hover:text-white hover:bg-blue-500 hover:border-blue-400 shadow-sm transition-all" aria-label="Twitter">
                     <Twitter size={18} />
                  </motion.a>
-                 <motion.a whileHover={{ y: -3, scale: 1.1 }} href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-indigo-300 hover:text-white hover:bg-blue-600 hover:border-blue-500 shadow-sm transition-all">
+                 <motion.a whileHover={{ y: -3, scale: 1.1 }} href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-indigo-300 hover:text-white hover:bg-blue-600 hover:border-blue-500 shadow-sm transition-all" aria-label="Facebook">
                     <Facebook size={18} />
+                 </motion.a>
+                 <motion.a whileHover={{ y: -3, scale: 1.1 }} href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-indigo-300 hover:text-white hover:bg-pink-600 hover:border-pink-500 shadow-sm transition-all" aria-label="Instagram">
+                    <Instagram size={18} />
                  </motion.a>
               </div>
           </div>
@@ -59,9 +62,9 @@ const Footer = () => {
               <Compass size={16} className="text-indigo-400" /> Ecosystem
             </h3>
             <ul className="space-y-4">
-              <li><a href="#" className="text-indigo-200/80 hover:text-white font-medium transition-colors flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-500" /> Mobile Application</a></li>
-              <li><a href="#" className="text-indigo-200/80 hover:text-white font-medium transition-colors flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-500" /> Partner API Access</a></li>
-              <li><a href="#" className="text-indigo-200/80 hover:text-white font-medium transition-colors flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-500" /> Station Operators Portal</a></li>
+              <li><Link to="/" className="text-indigo-200/80 hover:text-white font-medium transition-colors flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-500" /> Mobile Application</Link></li>
+              <li><Link to="/" className="text-indigo-200/80 hover:text-white font-medium transition-colors flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-500" /> Partner API Access</Link></li>
+              <li><Link to="/" className="text-indigo-200/80 hover:text-white font-medium transition-colors flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-500" /> Station Operators Portal</Link></li>
             </ul>
           </div>
 
@@ -88,9 +91,9 @@ const Footer = () => {
             &copy; {currentYear} FuelFinder Technologies. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm font-medium text-indigo-300/60">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Security</a>
+            <Link to="/" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link to="/" className="hover:text-white transition-colors">Security</Link>
           </div>
         </div>
       </div>
