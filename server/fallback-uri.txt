@@ -1,0 +1,1 @@
+mongodb://admin:admin%401234567@ac-dhcw84b-shard-00-02.sy8cjmp.mongodb.net:27017,ac-dhcw84b-shard-00-00.sy8cjmp.mongodb.net:27017,ac-dhcw84b-shard-00-01.sy8cjmp.mongodb.net:27017/fuelDB?ssl=true&authSource=admin&replicaSet=atlas-nn07qi-shard-0&appName=fule-finder
